@@ -57,6 +57,6 @@ jobs:
         key: ${{ secrets.AWS_PRIVATEKEY }}
         port: 22  # ${{ secrets.PORT }}
         script: |
-            sleep 60
+            sleep 30
             docker compose down --rmi all
             docker compose up -d
